@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>情報処理入門3 Webページデザイン</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 30, headerfix : $('nav')});
+	$('.totop').scrollshow({position : 500});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+<h1>トップページ</h1>
+<p>
+情報処理入門3（講義番号：912321）</br>
+12-13. Webページ演習
+</p>
+</header>
+
+<div id="contents">
+	<h2 id="sample">はじめに</h2>
+	<p>
+	問題数は、2問です。</br>
+	すべての問題は日経パソコンEduの記事から出題されています。</br></br>
+	正答と思う選択肢を選んだ後、それに該当する番号に<em>チェック</em>を入れてください。</br>
+	すべての回答が終了したら、<em>「送信」ボタン</em>をクリックしてください。</br></br>
+	<strong>注意）「ほかのページへのリンク」をクリックした場合、選択した回答がリセットされます。</strong></br>
+	</p>
+	<h2 id="sample">スタート</h2>
+	<p>
+	<em>問題を始めるには、下の「次へ」をクリックしてください。</em></br>
+	<em><a href="./mondai.html">次へ</a></em>
+	</p>
+	
+	<h2>動作環境に関して</h2>
+	<p>Microsoft Edge、Chrome、Firefoxでの動作を確認しています。</br></br>
+	（このWebページは、JavaScriptを使用しています）</p>
+
+	<h2>このWebページの作成に関して</h2>
+	<p>このWebページはウェブサイトcoolwebwindow.comの管理人でいらっしゃる、</br>
+	vanilla様が配布されているHTMLテンプレートを元に作成しました。</br></br>
+	また、このWebページを作成するにあたり、</br>vanilla様が提示された利用規約を順守して作成したことをここに明記します。</br>
+	<a href="http://www.coolwebwindow.com/" target="_blank">www.coolwebwindow.com</a></p>
+
+	<h2>ほかのページへのリンク</h2>
+	<p>
+	<a href="./index.html">トップページ</a>
+	<a href="./mondai.html">問題</a>
+	<a href="./kaisetsu.html">解説</a>
+	</p>
+</div><!-- /.contents -->
+
+<footer>
+	<div><small>Copyright &#169; 2017 - 2017 HOGE All Rights Reserved.</small></div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>

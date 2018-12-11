@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>情報処理入門3 Webページデザイン</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 30, headerfix : $('nav')});
+	$('.totop').scrollshow({position : 500});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+<h1>問題</h1>
+<p>
+情報処理入門3（講義番号：912321）</br>
+12-13. Webページ演習
+</p>
+</header>
+
+<div id="contents">
+	<h2 id="sample">問1</h2>
+
+	<h3>問題</h3>
+	<p>Aさんは大学の先生にEメールを送るため、下の図のようにパソコンでメールを書いていた。</br>
+	本文を書き終え、メールアドレスを入力したのだが、入力がひらがな入力に設定されていたため、</br>
+	「えぁｍｐぇ＠おかやまーう。あｃ。ｊｐ」と入力をしてしまった。</br>
+	このとき、このメールアドレスを半角英数字で「example@okayama-u.ac.jp」と</br>
+	変換するために押すショートカットキーとして正しいものはどれか。</br>
+	（※個人情報保護のため、図の一部が編集されています。）</br>	
+	<div class="photo"><img src="images/mondai1_1.png",alt="図1"></div>
+	</p>
+
+	<h3>選択肢</h3>
+	<ol>
+	<li>[F10]</li>
+	<li>[Ctrl] + [Z]</li>
+	<li>[Tab]</li>
+	<li>[Windows] + [D]</li>
+	<li>[半角／全角]</li>
+	</ol>
+	
+	<h3>正解だと思う回答にチェックをしてください</h3>
+
+	<form action="./kaisetsu.html" method="get">
+		<input type="radio" name="mondai1" value="1">1
+		<input type="radio" name="mondai1" value="2">2
+		<input type="radio" name="mondai1" value="3">3
+		<input type="radio" name="mondai1" value="4">4
+		<input type="radio" name="mondai1" value="5">5
+		</br></br><!--
+		<input type="submit",value="次へ">
+		
+		</br></br>
+	</form>-->
+	
+	<h2 id="sample">問2</h2>
+	<h3>問題</h3>
+	<p>プログラミング言語とその言語の得意分野が<span style="border-bottom: solid 1px black;"><em>一致していない</em></span>組み合わせを選択せよ。
+	</p>
+
+	<h3>選択肢</h3>
+	<table>
+	<tbody>
+	<tr><th>番号</th><th>主な環境と用途（得意分野）</th><th>プログラミング言語</th></tr>
+	<tr><td>1</td><td>Webアプリを作る</td><td>Java</td></tr>
+	<tr><td>2</td><td>Androidアプリを作る</td><td>JavaScript</td></tr>
+	<tr><td>3</td><td>機械学習を行うプログラムを作る</td><td>Python</td></tr>
+	<tr><td>4</td><td>Microsoft Officeでマクロを記述する</td><td>Visual Basic for Applications</td></tr>
+	<tr><td>5</td><td>iPhoneアプリを作る</td><td>Swift</td></tr>
+	</tbody>
+	</table>
+	
+	<h3>正解だと思う回答にチェックをしてください</h3><!--
+	<form action="./mondai_end.html" method="get">-->
+		<input type="radio" name="mondai2" value="1">1
+		<input type="radio" name="mondai2" value="2">2
+		<input type="radio" name="mondai2" value="3">3
+		<input type="radio" name="mondai2" value="4">4
+		<input type="radio" name="mondai2" value="5">5
+		</br></br>
+
+
+	<h2 id="sample">回答が終了したら</h2>
+	<p>下の送信ボタンを押して、答え合わせをしてください。</p>
+		<input type="submit",value="送信">
+		</br></br>
+	</form>	
+
+	<h2>ほかのページへのリンク</h2>
+	<p>
+	<a href="./index.html">トップページ</a>
+	<a href="./mondai.html">問題</a>
+	<a href="./kaisetsu.html">解説</a>
+	</p>
+	
+
+</div><!-- /.contents -->
+
+<footer>
+	<div><small>Copyright &#169; 2017 - 2017 HOGE All Rights Reserved.</small></div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
